@@ -173,4 +173,117 @@ class ArtifactService:
             
         except Exception as e:
             print(f"Error listing artifacts: {str(e)}")
-            return [] 
+            return []
+            
+    def create_post(self, user: User, title: str, content: str, tags: List[str]) -> Optional[str]:
+        """Create a new post"""
+        try:
+            # Check permission
+            if not self.rbac.check_permission(user, Permission.CREATE):
+                return None
+                
+            # Create post
+            post_data = {
+                "title": title,
+                "content": content,
+                "author_id": user.id,
+                "tags": tags
+            }
+            
+            return self.db.create_post(post_data)
+            
+        except Exception as e:
+            print(f"Error creating post: {str(e)}")
+            return None
+            
+    def get_post(self, user: User, post_id: str) -> Optional[Dict[str, Any]]:
+        """Get a post by ID"""
+        try:
+            # Get post
+            post = self.db.get_post(post_id)
+            if not post:
+                return None
+                
+            # Check permission
+            if not self.rbac.check_permission(user, Permission.READ, post_id):
+                return None
+                
+            return post
+            
+        except Exception as e:
+            print(f"Error getting post: {str(e)}")
+            return None
+            
+    def list_posts(self, user: User) -> List[Dict[str, Any]]:
+        """List all posts (admin only)"""
+        try:
+            if user.role != UserRole.ADMIN:
+                return []
+                
+            return self.db.list_posts()
+            
+        except Exception as e:
+            print(f"Error listing posts: {str(e)}")
+            return []
+            
+    def list_user_posts(self, user: User) -> List[Dict[str, Any]]:
+        """List posts owned by user"""
+        try:
+            return self.db.list_posts({"author_id": user.id})
+            
+        except Exception as e:
+            print(f"Error listing user posts: {str(e)}")
+            return []
+            
+    def list_public_posts(self) -> List[Dict[str, Any]]:
+        """List public posts (accessible by viewers)"""
+        try:
+            return self.db.list_posts()
+            
+        except Exception as e:
+            print(f"Error listing public posts: {str(e)}")
+            return []
+            
+    def update_post(self, user: User, post_id: str, post_data: Dict[str, Any]) -> bool:
+        """Update a post"""
+        try:
+            # Get post
+            post = self.db.get_post(post_id)
+            if not post:
+                return False
+                
+            # Check permission
+            if not self.rbac.check_permission(user, Permission.UPDATE, post_id):
+                return False
+                
+            # Only allow author or admin to update
+            if user.role != UserRole.ADMIN and post["author_id"] != user.id:
+                return False
+                
+            return self.db.update_post(post_id, post_data)
+            
+        except Exception as e:
+            print(f"Error updating post: {str(e)}")
+            return False
+            
+    def delete_post(self, user: User, post_id: str) -> bool:
+        """Delete a post"""
+        try:
+            # Get post
+            post = self.db.get_post(post_id)
+            if not post:
+                return False
+                
+            # Check permission
+            if not self.rbac.check_permission(user, Permission.DELETE, post_id):
+                return False
+                
+            # Only allow author or admin to delete
+            if user.role != UserRole.ADMIN and post["author_id"] != user.id:
+                return False
+                
+            return self.db.delete_post(post_id)
+            
+        except Exception as e:
+            print(f"Error deleting post: {str(e)}")
+            return False 

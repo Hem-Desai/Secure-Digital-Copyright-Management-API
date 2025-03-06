@@ -11,6 +11,7 @@ class UserRole(Enum):
 class User:
     id: str
     username: str
+    email: str  # Added email field
     password_hash: str  # Store as string since we decode after hashing
     role: UserRole
     created_at: float
@@ -31,8 +32,7 @@ class User:
             return True
             
         if self.role == UserRole.OWNER:
-            return (action in ['read', 'update', 'delete'] and 
-                   resource in self.artifacts)
+            return action in ['read', 'update', 'delete', 'create', 'upload']
             
         if self.role == UserRole.VIEWER:
             return action == 'read'

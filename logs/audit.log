@@ -181,3 +181,1466 @@
 2025-03-04 18:45:53,263 - INFO - {"timestamp": "2025-03-04T18:45:53.263966", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
 2025-03-04 18:46:02,284 - INFO - {"timestamp": "2025-03-04T18:46:02.284151", "event_type": "database_error", "details": {"error": "no such column: account_locked"}}
 2025-03-04 18:46:02,284 - INFO - {"timestamp": "2025-03-04T18:46:02.284658", "event_type": "authentication", "user_id": "admin", "status": "failure", "details": {"ip_address": "127.0.0.1", "success": false}}
+2025-03-05 02:14:37,302 - INFO - {"timestamp": "2025-03-05T02:14:37.302425", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 02:14:37,303 - INFO - {"timestamp": "2025-03-05T02:14:37.303440", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 02:14:37,303 - INFO - {"timestamp": "2025-03-05T02:14:37.303440", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 02:14:37,304 - INFO - {"timestamp": "2025-03-05T02:14:37.304439", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 02:14:37,305 - INFO - {"timestamp": "2025-03-05T02:14:37.305439", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 02:14:37,305 - INFO - {"timestamp": "2025-03-05T02:14:37.305439", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 02:14:45,094 - INFO - {"timestamp": "2025-03-05T02:14:45.094485", "event_type": "database_error", "details": {"error": "no such column: account_locked"}}
+2025-03-05 02:14:45,095 - INFO - {"timestamp": "2025-03-05T02:14:45.095485", "event_type": "authentication", "user_id": "admin", "status": "failure", "details": {"ip_address": "127.0.0.1", "success": false}}
+2025-03-05 12:27:29,059 - INFO - {"timestamp": "2025-03-05T12:27:29.059459", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:27:29,060 - INFO - {"timestamp": "2025-03-05T12:27:29.060459", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:27:29,060 - INFO - {"timestamp": "2025-03-05T12:27:29.060459", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:27:29,061 - INFO - {"timestamp": "2025-03-05T12:27:29.061459", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:27:29,062 - INFO - {"timestamp": "2025-03-05T12:27:29.062459", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:27:29,062 - INFO - {"timestamp": "2025-03-05T12:27:29.062459", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:27:29,063 - INFO - {"timestamp": "2025-03-05T12:27:29.063464", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:27:29,063 - INFO - {"timestamp": "2025-03-05T12:27:29.063464", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:27:29,064 - INFO - {"timestamp": "2025-03-05T12:27:29.064460", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:50:47,609 - INFO - {"timestamp": "2025-03-05T12:50:47.609430", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:50:56,836 - INFO - {"timestamp": "2025-03-05T12:50:56.836508", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:51:13,841 - INFO - {"timestamp": "2025-03-05T12:51:13.841981", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:51:13,841 - INFO - {"timestamp": "2025-03-05T12:51:13.841981", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:51:13,841 - INFO - {"timestamp": "2025-03-05T12:51:13.841981", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:51:13,843 - INFO - {"timestamp": "2025-03-05T12:51:13.843413", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:51:13,844 - INFO - {"timestamp": "2025-03-05T12:51:13.844488", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:51:13,844 - INFO - {"timestamp": "2025-03-05T12:51:13.844488", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:51:13,845 - INFO - {"timestamp": "2025-03-05T12:51:13.845486", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:51:13,845 - INFO - {"timestamp": "2025-03-05T12:51:13.845486", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:51:13,846 - INFO - {"timestamp": "2025-03-05T12:51:13.846487", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:51:20,501 - INFO - {"timestamp": "2025-03-05T12:51:20.501059", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:51:20,501 - INFO - {"timestamp": "2025-03-05T12:51:20.501059", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:51:20,502 - INFO - {"timestamp": "2025-03-05T12:51:20.502061", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:51:20,504 - INFO - {"timestamp": "2025-03-05T12:51:20.504251", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:51:20,504 - INFO - {"timestamp": "2025-03-05T12:51:20.504251", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:51:20,504 - INFO - {"timestamp": "2025-03-05T12:51:20.504251", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:51:20,852 - INFO - {"timestamp": "2025-03-05T12:51:20.852899", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:51:20,852 - INFO - {"timestamp": "2025-03-05T12:51:20.852899", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:51:20,852 - INFO - {"timestamp": "2025-03-05T12:51:20.852899", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:51:20,854 - INFO - {"timestamp": "2025-03-05T12:51:20.854899", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:51:20,854 - INFO - {"timestamp": "2025-03-05T12:51:20.854899", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:51:20,854 - INFO - {"timestamp": "2025-03-05T12:51:20.854899", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:51:20,855 - INFO - {"timestamp": "2025-03-05T12:51:20.855899", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:51:20,856 - INFO - {"timestamp": "2025-03-05T12:51:20.855899", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:51:20,856 - INFO - {"timestamp": "2025-03-05T12:51:20.856899", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:52:06,145 - INFO - {"timestamp": "2025-03-05T12:52:06.145238", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:52:06,145 - INFO - {"timestamp": "2025-03-05T12:52:06.145238", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:52:06,146 - INFO - {"timestamp": "2025-03-05T12:52:06.146244", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:52:06,147 - INFO - {"timestamp": "2025-03-05T12:52:06.147244", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:52:06,147 - INFO - {"timestamp": "2025-03-05T12:52:06.147244", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:52:06,147 - INFO - {"timestamp": "2025-03-05T12:52:06.147244", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:52:06,149 - INFO - {"timestamp": "2025-03-05T12:52:06.149275", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:52:06,149 - INFO - {"timestamp": "2025-03-05T12:52:06.149275", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:52:06,149 - INFO - {"timestamp": "2025-03-05T12:52:06.149275", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:52:15,030 - INFO - {"timestamp": "2025-03-05T12:52:15.030701", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:52:15,031 - INFO - {"timestamp": "2025-03-05T12:52:15.031699", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:52:15,031 - INFO - {"timestamp": "2025-03-05T12:52:15.031699", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:52:15,032 - INFO - {"timestamp": "2025-03-05T12:52:15.032696", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:52:15,033 - INFO - {"timestamp": "2025-03-05T12:52:15.033698", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:52:15,033 - INFO - {"timestamp": "2025-03-05T12:52:15.033698", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:52:15,034 - INFO - {"timestamp": "2025-03-05T12:52:15.034703", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:52:15,034 - INFO - {"timestamp": "2025-03-05T12:52:15.034703", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:52:15,034 - INFO - {"timestamp": "2025-03-05T12:52:15.034703", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:52:43,971 - INFO - {"timestamp": "2025-03-05T12:52:43.971113", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:52:43,971 - INFO - {"timestamp": "2025-03-05T12:52:43.971113", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:52:43,972 - INFO - {"timestamp": "2025-03-05T12:52:43.972113", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:52:43,973 - INFO - {"timestamp": "2025-03-05T12:52:43.973113", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:52:43,973 - INFO - {"timestamp": "2025-03-05T12:52:43.973113", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:52:43,973 - INFO - {"timestamp": "2025-03-05T12:52:43.973113", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:52:43,974 - INFO - {"timestamp": "2025-03-05T12:52:43.974617", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:52:43,974 - INFO - {"timestamp": "2025-03-05T12:52:43.974617", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:52:43,975 - INFO - {"timestamp": "2025-03-05T12:52:43.974617", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:53:14,048 - INFO - {"timestamp": "2025-03-05T12:53:14.048619", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:53:14,048 - INFO - {"timestamp": "2025-03-05T12:53:14.048619", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:53:14,048 - INFO - {"timestamp": "2025-03-05T12:53:14.048619", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:53:14,051 - INFO - {"timestamp": "2025-03-05T12:53:14.051131", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:53:14,051 - INFO - {"timestamp": "2025-03-05T12:53:14.051131", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:53:14,051 - INFO - {"timestamp": "2025-03-05T12:53:14.051131", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:53:22,327 - INFO - {"timestamp": "2025-03-05T12:53:22.327617", "event_type": "database_error", "details": {"error": "no such column: account_locked"}}
+2025-03-05 12:53:22,327 - INFO - {"timestamp": "2025-03-05T12:53:22.327617", "event_type": "authentication", "user_id": "admin", "status": "success", "details": {"ip_address": "127.0.0.1", "success": true}}
+2025-03-05 12:53:29,848 - INFO - {"timestamp": "2025-03-05T12:53:29.848712", "event_type": "database_error", "details": {"error": "no such table: artifacts"}}
+2025-03-05 12:53:29,848 - INFO - {"timestamp": "2025-03-05T12:53:29.848712", "event_type": "list_artifacts", "user_id": "ef4d4ace-5356-46b7-9af4-f760518670b6", "status": "success", "details": {"count": 0}}
+2025-03-05 12:54:04,885 - INFO - {"timestamp": "2025-03-05T12:54:04.885988", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:54:04,885 - INFO - {"timestamp": "2025-03-05T12:54:04.885988", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:54:04,886 - INFO - {"timestamp": "2025-03-05T12:54:04.886989", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:54:04,888 - INFO - {"timestamp": "2025-03-05T12:54:04.888501", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:54:04,888 - INFO - {"timestamp": "2025-03-05T12:54:04.888501", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:54:04,889 - INFO - {"timestamp": "2025-03-05T12:54:04.889499", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 12:54:13,850 - INFO - {"timestamp": "2025-03-05T12:54:13.850373", "event_type": "database_error", "details": {"error": "no such column: account_locked"}}
+2025-03-05 12:54:13,850 - INFO - {"timestamp": "2025-03-05T12:54:13.850373", "event_type": "authentication", "user_id": "owner", "status": "failure", "details": {"ip_address": "127.0.0.1", "success": false}}
+2025-03-05 12:54:25,495 - INFO - {"timestamp": "2025-03-05T12:54:25.495252", "event_type": "database_error", "details": {"error": "no such column: account_locked"}}
+2025-03-05 12:54:25,495 - INFO - {"timestamp": "2025-03-05T12:54:25.495252", "event_type": "authentication", "user_id": "viewer", "status": "success", "details": {"ip_address": "127.0.0.1", "success": true}}
+2025-03-05 12:54:29,052 - INFO - {"timestamp": "2025-03-05T12:54:29.052640", "event_type": "database_error", "details": {"error": "no such table: artifacts"}}
+2025-03-05 12:54:29,052 - INFO - {"timestamp": "2025-03-05T12:54:29.052640", "event_type": "list_artifacts", "user_id": "78fc5753-f34a-4031-ad3d-cf4167e44467", "status": "success", "details": {"count": 0}}
+2025-03-05 12:55:06,659 - INFO - {"timestamp": "2025-03-05T12:55:06.659733", "event_type": "database_error", "details": {"error": "no such column: account_locked"}}
+2025-03-05 12:55:06,659 - INFO - {"timestamp": "2025-03-05T12:55:06.659733", "event_type": "authentication", "user_id": "owner", "status": "failure", "details": {"ip_address": "127.0.0.1", "success": false}}
+2025-03-05 13:09:24,601 - INFO - {"timestamp": "2025-03-05T13:09:24.601389", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 13:09:24,602 - INFO - {"timestamp": "2025-03-05T13:09:24.602394", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 13:09:24,602 - INFO - {"timestamp": "2025-03-05T13:09:24.602906", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 13:09:24,603 - INFO - {"timestamp": "2025-03-05T13:09:24.603912", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 13:09:24,604 - INFO - {"timestamp": "2025-03-05T13:09:24.604912", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 13:09:24,604 - INFO - {"timestamp": "2025-03-05T13:09:24.604912", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 13:09:24,605 - INFO - {"timestamp": "2025-03-05T13:09:24.605913", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 13:09:24,605 - INFO - {"timestamp": "2025-03-05T13:09:24.605913", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 13:09:24,606 - INFO - {"timestamp": "2025-03-05T13:09:24.606914", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 13:10:39,912 - INFO - {"timestamp": "2025-03-05T13:10:39.912917", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 13:10:39,912 - INFO - {"timestamp": "2025-03-05T13:10:39.912917", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 13:10:39,912 - INFO - {"timestamp": "2025-03-05T13:10:39.912917", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 13:10:39,914 - INFO - {"timestamp": "2025-03-05T13:10:39.914973", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 13:10:39,914 - INFO - {"timestamp": "2025-03-05T13:10:39.914973", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 13:10:39,915 - INFO - {"timestamp": "2025-03-05T13:10:39.915993", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 13:10:48,637 - INFO - {"timestamp": "2025-03-05T13:10:48.637847", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 13:10:48,637 - INFO - {"timestamp": "2025-03-05T13:10:48.637847", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 13:10:48,637 - INFO - {"timestamp": "2025-03-05T13:10:48.637847", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 13:10:48,639 - INFO - {"timestamp": "2025-03-05T13:10:48.639847", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 13:10:48,639 - INFO - {"timestamp": "2025-03-05T13:10:48.639847", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 13:10:48,639 - INFO - {"timestamp": "2025-03-05T13:10:48.639847", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 13:18:58,257 - INFO - {"timestamp": "2025-03-05T13:18:58.256889", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 13:18:58,257 - INFO - {"timestamp": "2025-03-05T13:18:58.257889", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 13:18:58,257 - INFO - {"timestamp": "2025-03-05T13:18:58.257889", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 13:18:58,258 - INFO - {"timestamp": "2025-03-05T13:18:58.258890", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 13:18:58,259 - INFO - {"timestamp": "2025-03-05T13:18:58.259889", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 13:18:58,259 - INFO - {"timestamp": "2025-03-05T13:18:58.259889", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 13:18:58,260 - INFO - {"timestamp": "2025-03-05T13:18:58.260889", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 13:18:58,260 - INFO - {"timestamp": "2025-03-05T13:18:58.260889", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 13:18:58,261 - INFO - {"timestamp": "2025-03-05T13:18:58.261921", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 13:19:01,535 - INFO - {"timestamp": "2025-03-05T13:19:01.535554", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 13:19:01,535 - INFO - {"timestamp": "2025-03-05T13:19:01.535554", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 13:19:01,536 - INFO - {"timestamp": "2025-03-05T13:19:01.536569", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 13:19:01,537 - INFO - {"timestamp": "2025-03-05T13:19:01.537568", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 13:19:01,538 - INFO - {"timestamp": "2025-03-05T13:19:01.537568", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 13:19:01,538 - INFO - {"timestamp": "2025-03-05T13:19:01.538567", "event_type": "database_error", "details": {"error": "no such table: user_artifacts"}}
+2025-03-05 13:24:01,535 - INFO - {
+  "timestamp": "2025-03-05T13:24:01.535882",
+  "event_type": "database_error",
+  "details": {
+    "error": "no such table: user_artifacts"
+  }
+}
+2025-03-05 13:24:01,536 - INFO - {
+  "timestamp": "2025-03-05T13:24:01.536889",
+  "event_type": "database_error",
+  "details": {
+    "error": "no such table: user_artifacts"
+  }
+}
+2025-03-05 13:24:01,537 - INFO - {
+  "timestamp": "2025-03-05T13:24:01.537883",
+  "event_type": "database_error",
+  "details": {
+    "error": "no such table: user_artifacts"
+  }
+}
+2025-03-05 13:24:01,538 - INFO - {
+  "timestamp": "2025-03-05T13:24:01.538881",
+  "event_type": "database_error",
+  "details": {
+    "error": "no such table: user_artifacts"
+  }
+}
+2025-03-05 13:24:01,539 - INFO - {
+  "timestamp": "2025-03-05T13:24:01.539894",
+  "event_type": "database_error",
+  "details": {
+    "error": "no such table: user_artifacts"
+  }
+}
+2025-03-05 13:24:01,539 - INFO - {
+  "timestamp": "2025-03-05T13:24:01.539894",
+  "event_type": "database_error",
+  "details": {
+    "error": "no such table: user_artifacts"
+  }
+}
+2025-03-05 13:24:01,542 - INFO - {
+  "timestamp": "2025-03-05T13:24:01.542160",
+  "event_type": "database_error",
+  "details": {
+    "error": "no such table: user_artifacts"
+  }
+}
+2025-03-05 13:24:01,542 - INFO - {
+  "timestamp": "2025-03-05T13:24:01.542160",
+  "event_type": "database_error",
+  "details": {
+    "error": "no such table: user_artifacts"
+  }
+}
+2025-03-05 13:24:01,543 - INFO - {
+  "timestamp": "2025-03-05T13:24:01.543197",
+  "event_type": "database_error",
+  "details": {
+    "error": "no such table: user_artifacts"
+  }
+}
+2025-03-05 13:24:05,842 - INFO - {
+  "timestamp": "2025-03-05T13:24:05.842141",
+  "event_type": "database_error",
+  "details": {
+    "error": "no such table: user_artifacts"
+  }
+}
+2025-03-05 13:24:05,843 - INFO - {
+  "timestamp": "2025-03-05T13:24:05.843237",
+  "event_type": "database_error",
+  "details": {
+    "error": "no such table: user_artifacts"
+  }
+}
+2025-03-05 13:24:05,844 - INFO - {
+  "timestamp": "2025-03-05T13:24:05.844238",
+  "event_type": "database_error",
+  "details": {
+    "error": "no such table: user_artifacts"
+  }
+}
+2025-03-05 13:24:05,845 - INFO - {
+  "timestamp": "2025-03-05T13:24:05.845677",
+  "event_type": "database_error",
+  "details": {
+    "error": "no such table: user_artifacts"
+  }
+}
+2025-03-05 13:24:05,845 - INFO - {
+  "timestamp": "2025-03-05T13:24:05.845677",
+  "event_type": "database_error",
+  "details": {
+    "error": "no such table: user_artifacts"
+  }
+}
+2025-03-05 13:24:05,846 - INFO - {
+  "timestamp": "2025-03-05T13:24:05.846691",
+  "event_type": "database_error",
+  "details": {
+    "error": "no such table: user_artifacts"
+  }
+}
+2025-03-05 13:24:18,200 - INFO - {
+  "timestamp": "2025-03-05T13:24:18.200798",
+  "event_type": "api_request",
+  "user_id": "anonymous",
+  "status": "success",
+  "details": {
+    "method": "PUT",
+    "url": "https://localhost:8000/api/login",
+    "client_ip": "127.0.0.1",
+    "status_code": 422,
+    "duration_ms": 1.001
+  }
+}
+2025-03-05 13:24:18,202 - ERROR - {
+  "timestamp": "2025-03-05T13:24:18.202797",
+  "error_type": "api_request_error",
+  "error_message": "422 Client Error: Unprocessable Entity for url: https://localhost:8000/api/login",
+  "details": {}
+}
+2025-03-05 13:24:32,912 - INFO - {
+  "timestamp": "2025-03-05T13:24:32.912389",
+  "event_type": "api_request",
+  "user_id": "anonymous",
+  "status": "success",
+  "details": {
+    "method": "PUT",
+    "url": "https://localhost:8000/api/login",
+    "client_ip": "127.0.0.1",
+    "status_code": 422,
+    "duration_ms": 1.002
+  }
+}
+2025-03-05 13:24:32,913 - ERROR - {
+  "timestamp": "2025-03-05T13:24:32.913385",
+  "error_type": "api_request_error",
+  "error_message": "422 Client Error: Unprocessable Entity for url: https://localhost:8000/api/login",
+  "details": {}
+}
+2025-03-05 13:24:46,770 - INFO - {
+  "timestamp": "2025-03-05T13:24:46.770186",
+  "event_type": "api_request",
+  "user_id": "anonymous",
+  "status": "success",
+  "details": {
+    "method": "PUT",
+    "url": "https://localhost:8000/api/login",
+    "client_ip": "127.0.0.1",
+    "status_code": 422,
+    "duration_ms": 1.23
+  }
+}
+2025-03-05 13:24:46,771 - ERROR - {
+  "timestamp": "2025-03-05T13:24:46.771256",
+  "error_type": "api_request_error",
+  "error_message": "422 Client Error: Unprocessable Entity for url: https://localhost:8000/api/login",
+  "details": {}
+}
+2025-03-05 13:34:31,709 - INFO - {
+  "timestamp": "2025-03-05T13:34:31.709356",
+  "event_type": "api_request",
+  "user_id": "anonymous",
+  "status": "success",
+  "details": {
+    "method": "PUT",
+    "url": "https://localhost:8000/api/login",
+    "client_ip": "127.0.0.1",
+    "status_code": 422,
+    "duration_ms": 1.2899999999999998
+  }
+}
+2025-03-05 13:34:31,710 - ERROR - {
+  "timestamp": "2025-03-05T13:34:31.710371",
+  "error_type": "api_request_error",
+  "error_message": "422 Client Error: Unprocessable Entity for url: https://localhost:8000/api/login",
+  "details": {}
+}
+2025-03-05 13:34:39,139 - INFO - {
+  "timestamp": "2025-03-05T13:34:39.139275",
+  "event_type": "database_error",
+  "details": {
+    "error": "no such table: user_artifacts"
+  }
+}
+2025-03-05 13:34:39,139 - INFO - {
+  "timestamp": "2025-03-05T13:34:39.139275",
+  "event_type": "database_error",
+  "details": {
+    "error": "no such table: user_artifacts"
+  }
+}
+2025-03-05 13:34:39,140 - INFO - {
+  "timestamp": "2025-03-05T13:34:39.140274",
+  "event_type": "database_error",
+  "details": {
+    "error": "no such table: user_artifacts"
+  }
+}
+2025-03-05 13:34:39,142 - INFO - {
+  "timestamp": "2025-03-05T13:34:39.142273",
+  "event_type": "database_error",
+  "details": {
+    "error": "no such table: user_artifacts"
+  }
+}
+2025-03-05 13:34:39,143 - INFO - {
+  "timestamp": "2025-03-05T13:34:39.143273",
+  "event_type": "database_error",
+  "details": {
+    "error": "no such table: user_artifacts"
+  }
+}
+2025-03-05 13:34:39,143 - INFO - {
+  "timestamp": "2025-03-05T13:34:39.143273",
+  "event_type": "database_error",
+  "details": {
+    "error": "no such table: user_artifacts"
+  }
+}
+2025-03-05 13:34:39,145 - INFO - {
+  "timestamp": "2025-03-05T13:34:39.145273",
+  "event_type": "database_error",
+  "details": {
+    "error": "no such table: user_artifacts"
+  }
+}
+2025-03-05 13:34:39,146 - INFO - {
+  "timestamp": "2025-03-05T13:34:39.146274",
+  "event_type": "database_error",
+  "details": {
+    "error": "no such table: user_artifacts"
+  }
+}
+2025-03-05 13:34:39,147 - INFO - {
+  "timestamp": "2025-03-05T13:34:39.147275",
+  "event_type": "database_error",
+  "details": {
+    "error": "no such table: user_artifacts"
+  }
+}
+2025-03-05 13:34:42,055 - INFO - {
+  "timestamp": "2025-03-05T13:34:42.055201",
+  "event_type": "database_error",
+  "details": {
+    "error": "no such table: user_artifacts"
+  }
+}
+2025-03-05 13:34:42,056 - INFO - {
+  "timestamp": "2025-03-05T13:34:42.056199",
+  "event_type": "database_error",
+  "details": {
+    "error": "no such table: user_artifacts"
+  }
+}
+2025-03-05 13:34:42,057 - INFO - {
+  "timestamp": "2025-03-05T13:34:42.056199",
+  "event_type": "database_error",
+  "details": {
+    "error": "no such table: user_artifacts"
+  }
+}
+2025-03-05 13:34:42,058 - INFO - {
+  "timestamp": "2025-03-05T13:34:42.058514",
+  "event_type": "database_error",
+  "details": {
+    "error": "no such table: user_artifacts"
+  }
+}
+2025-03-05 13:34:42,059 - INFO - {
+  "timestamp": "2025-03-05T13:34:42.059513",
+  "event_type": "database_error",
+  "details": {
+    "error": "no such table: user_artifacts"
+  }
+}
+2025-03-05 13:34:42,060 - INFO - {
+  "timestamp": "2025-03-05T13:34:42.060514",
+  "event_type": "database_error",
+  "details": {
+    "error": "no such table: user_artifacts"
+  }
+}
+2025-03-05 13:34:51,379 - INFO - {
+  "timestamp": "2025-03-05T13:34:51.379126",
+  "event_type": "api_request",
+  "user_id": "anonymous",
+  "status": "success",
+  "details": {
+    "method": "PUT",
+    "path": "/api/login",
+    "status_code": 422,
+    "duration_ms": 2.003,
+    "client_ip": "127.0.0.1"
+  }
+}
+2025-03-05 13:34:51,381 - ERROR - {
+  "timestamp": "2025-03-05T13:34:51.381123",
+  "error_type": "api_request_error",
+  "error_message": "422 Client Error: Unprocessable Entity for url: https://localhost:8000/api/login",
+  "details": {}
+}
+2025-03-05 13:38:55,517 - INFO - {
+  "timestamp": "2025-03-05T13:38:55.517072",
+  "event_type": "database_error",
+  "details": {
+    "error": "no such column: artifact_id"
+  }
+}
+2025-03-05 13:38:55,517 - INFO - {
+  "timestamp": "2025-03-05T13:38:55.517578",
+  "event_type": "database_error",
+  "details": {
+    "error": "no such column: artifact_id"
+  }
+}
+2025-03-05 13:38:55,518 - INFO - {
+  "timestamp": "2025-03-05T13:38:55.518845",
+  "event_type": "database_error",
+  "details": {
+    "error": "no such column: artifact_id"
+  }
+}
+2025-03-05 13:38:55,520 - INFO - {
+  "timestamp": "2025-03-05T13:38:55.520835",
+  "event_type": "database_error",
+  "details": {
+    "error": "no such column: artifact_id"
+  }
+}
+2025-03-05 13:38:55,520 - INFO - {
+  "timestamp": "2025-03-05T13:38:55.520835",
+  "event_type": "database_error",
+  "details": {
+    "error": "no such column: artifact_id"
+  }
+}
+2025-03-05 13:38:55,521 - INFO - {
+  "timestamp": "2025-03-05T13:38:55.521952",
+  "event_type": "database_error",
+  "details": {
+    "error": "no such column: artifact_id"
+  }
+}
+2025-03-05 13:38:55,523 - INFO - {
+  "timestamp": "2025-03-05T13:38:55.523415",
+  "event_type": "database_error",
+  "details": {
+    "error": "no such column: artifact_id"
+  }
+}
+2025-03-05 13:38:55,523 - INFO - {
+  "timestamp": "2025-03-05T13:38:55.523415",
+  "event_type": "database_error",
+  "details": {
+    "error": "no such column: artifact_id"
+  }
+}
+2025-03-05 13:38:55,524 - INFO - {
+  "timestamp": "2025-03-05T13:38:55.524428",
+  "event_type": "database_error",
+  "details": {
+    "error": "no such column: artifact_id"
+  }
+}
+2025-03-05 13:39:10,653 - INFO - {
+  "timestamp": "2025-03-05T13:39:10.653067",
+  "event_type": "database_error",
+  "details": {
+    "error": "no such column: artifact_id"
+  }
+}
+2025-03-05 13:39:10,654 - INFO - {
+  "timestamp": "2025-03-05T13:39:10.654066",
+  "event_type": "database_error",
+  "details": {
+    "error": "no such column: artifact_id"
+  }
+}
+2025-03-05 13:39:10,654 - INFO - {
+  "timestamp": "2025-03-05T13:39:10.654066",
+  "event_type": "database_error",
+  "details": {
+    "error": "no such column: artifact_id"
+  }
+}
+2025-03-05 13:39:10,656 - INFO - {
+  "timestamp": "2025-03-05T13:39:10.656064",
+  "event_type": "database_error",
+  "details": {
+    "error": "no such column: artifact_id"
+  }
+}
+2025-03-05 13:39:10,657 - INFO - {
+  "timestamp": "2025-03-05T13:39:10.657065",
+  "event_type": "database_error",
+  "details": {
+    "error": "no such column: artifact_id"
+  }
+}
+2025-03-05 13:39:10,658 - INFO - {
+  "timestamp": "2025-03-05T13:39:10.657065",
+  "event_type": "database_error",
+  "details": {
+    "error": "no such column: artifact_id"
+  }
+}
+2025-03-05 13:39:19,627 - ERROR - {
+  "timestamp": "2025-03-05T13:39:19.627003",
+  "error_type": "api_request_error",
+  "error_message": "500 Server Error: Internal Server Error for url: https://localhost:5000/api/login",
+  "details": {}
+}
+2025-03-05 13:53:15,061 - INFO - {
+  "timestamp": "2025-03-05T13:53:15.061379",
+  "type": "system",
+  "message": "Incoming PUT request to /api/login"
+}
+2025-03-05 13:53:15,307 - INFO - {
+  "timestamp": "2025-03-05T13:53:15.307575",
+  "event_type": "security_violation",
+  "details": {
+    "error": "Invalid table name",
+    "table": null
+  }
+}
+2025-03-05 13:53:15,308 - INFO - {
+  "timestamp": "2025-03-05T13:53:15.308590",
+  "event_type": "authentication",
+  "user_id": "8caa8a6d-a8c6-4f0e-a96d-41810f49df42",
+  "status": "success",
+  "details": {
+    "ip_address": "127.0.0.1",
+    "success": true
+  }
+}
+2025-03-05 13:53:15,309 - INFO - {
+  "timestamp": "2025-03-05T13:53:15.309589",
+  "type": "system",
+  "message": "Completed PUT /api/login - Status: 200 - Duration: 248.21ms"
+}
+2025-03-05 13:53:15,309 - INFO - {
+  "timestamp": "2025-03-05T13:53:15.309589",
+  "event_type": "api_request",
+  "user_id": "anonymous",
+  "status": "success",
+  "details": {
+    "method": "PUT",
+    "path": "/api/login",
+    "status_code": 200,
+    "duration_ms": 248.20999999999998,
+    "client_ip": "127.0.0.1"
+  }
+}
+2025-03-05 13:53:17,374 - INFO - {
+  "timestamp": "2025-03-05T13:53:17.374578",
+  "type": "system",
+  "message": "Incoming GET request to /api/user/me"
+}
+2025-03-05 13:53:17,376 - INFO - {
+  "timestamp": "2025-03-05T13:53:17.376601",
+  "event_type": "user_info_accessed",
+  "user_id": "8caa8a6d-a8c6-4f0e-a96d-41810f49df42",
+  "status": "success",
+  "details": {
+    "accessed_user_id": "8caa8a6d-a8c6-4f0e-a96d-41810f49df42"
+  }
+}
+2025-03-05 13:53:17,377 - INFO - {
+  "timestamp": "2025-03-05T13:53:17.377637",
+  "type": "system",
+  "message": "Completed GET /api/user/me - Status: 200 - Duration: 2.02ms"
+}
+2025-03-05 13:53:17,377 - INFO - {
+  "timestamp": "2025-03-05T13:53:17.377637",
+  "event_type": "api_request",
+  "user_id": "anonymous",
+  "status": "success",
+  "details": {
+    "method": "GET",
+    "path": "/api/user/me",
+    "status_code": 200,
+    "duration_ms": 2.023,
+    "client_ip": "127.0.0.1"
+  }
+}
+2025-03-05 13:53:40,377 - INFO - {
+  "timestamp": "2025-03-05T13:53:40.377821",
+  "type": "system",
+  "message": "Incoming PUT request to /api/login"
+}
+2025-03-05 13:53:40,631 - INFO - {
+  "timestamp": "2025-03-05T13:53:40.631272",
+  "event_type": "security_violation",
+  "details": {
+    "error": "Invalid table name",
+    "table": null
+  }
+}
+2025-03-05 13:53:40,632 - INFO - {
+  "timestamp": "2025-03-05T13:53:40.632948",
+  "event_type": "authentication",
+  "user_id": "ed8e7cda-25d0-4e37-a918-87f910c6c61f",
+  "status": "success",
+  "details": {
+    "ip_address": "127.0.0.1",
+    "success": true
+  }
+}
+2025-03-05 13:53:40,634 - INFO - {
+  "timestamp": "2025-03-05T13:53:40.634172",
+  "type": "system",
+  "message": "Completed PUT /api/login - Status: 200 - Duration: 256.35ms"
+}
+2025-03-05 13:53:40,634 - INFO - {
+  "timestamp": "2025-03-05T13:53:40.634172",
+  "event_type": "api_request",
+  "user_id": "anonymous",
+  "status": "success",
+  "details": {
+    "method": "PUT",
+    "path": "/api/login",
+    "status_code": 200,
+    "duration_ms": 256.351,
+    "client_ip": "127.0.0.1"
+  }
+}
+2025-03-05 13:53:42,684 - INFO - {
+  "timestamp": "2025-03-05T13:53:42.684391",
+  "type": "system",
+  "message": "Incoming GET request to /api/user/me"
+}
+2025-03-05 13:53:42,686 - INFO - {
+  "timestamp": "2025-03-05T13:53:42.686577",
+  "event_type": "user_info_accessed",
+  "user_id": "ed8e7cda-25d0-4e37-a918-87f910c6c61f",
+  "status": "success",
+  "details": {
+    "accessed_user_id": "ed8e7cda-25d0-4e37-a918-87f910c6c61f"
+  }
+}
+2025-03-05 13:53:42,686 - INFO - {
+  "timestamp": "2025-03-05T13:53:42.686577",
+  "type": "system",
+  "message": "Completed GET /api/user/me - Status: 200 - Duration: 2.19ms"
+}
+2025-03-05 13:53:42,687 - INFO - {
+  "timestamp": "2025-03-05T13:53:42.687660",
+  "event_type": "api_request",
+  "user_id": "anonymous",
+  "status": "success",
+  "details": {
+    "method": "GET",
+    "path": "/api/user/me",
+    "status_code": 200,
+    "duration_ms": 2.186,
+    "client_ip": "127.0.0.1"
+  }
+}
+2025-03-05 13:54:24,266 - ERROR - {
+  "timestamp": "2025-03-05T13:54:24.266341",
+  "error_type": "api_request_error",
+  "error_message": "HTTPSConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/me (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000002452C898070>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+  "details": {}
+}
+2025-03-05 13:54:54,663 - ERROR - {
+  "timestamp": "2025-03-05T13:54:54.663122",
+  "error_type": "api_request_error",
+  "error_message": "HTTPSConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/login (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000002452C898FA0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+  "details": {}
+}
+2025-03-05 13:55:25,410 - INFO - {
+  "timestamp": "2025-03-05T13:55:25.409509",
+  "type": "system",
+  "message": "Incoming GET request to /api/user/me"
+}
+2025-03-05 13:55:25,410 - INFO - {
+  "timestamp": "2025-03-05T13:55:25.410590",
+  "event_type": "token_validation_error",
+  "details": {
+    "error": "Signature verification failed"
+  }
+}
+2025-03-05 13:55:25,411 - ERROR - {
+  "timestamp": "2025-03-05T13:55:25.410590",
+  "error_type": "auth_error",
+  "error_message": "Invalid token",
+  "details": {
+    "token": "redacted"
+  }
+}
+2025-03-05 13:55:25,411 - ERROR - {
+  "timestamp": "2025-03-05T13:55:25.411890",
+  "error_type": "auth_error",
+  "error_message": "",
+  "details": {}
+}
+2025-03-05 13:55:25,411 - INFO - {
+  "timestamp": "2025-03-05T13:55:25.411890",
+  "type": "system",
+  "message": "Completed GET /api/user/me - Status: 401 - Duration: 2.38ms"
+}
+2025-03-05 13:55:25,412 - INFO - {
+  "timestamp": "2025-03-05T13:55:25.412955",
+  "event_type": "api_request",
+  "user_id": "anonymous",
+  "status": "success",
+  "details": {
+    "method": "GET",
+    "path": "/api/user/me",
+    "status_code": 401,
+    "duration_ms": 2.381,
+    "client_ip": "127.0.0.1"
+  }
+}
+2025-03-05 13:55:33,042 - INFO - {
+  "timestamp": "2025-03-05T13:55:33.042738",
+  "type": "system",
+  "message": "Incoming PUT request to /api/login"
+}
+2025-03-05 13:55:33,289 - INFO - {
+  "timestamp": "2025-03-05T13:55:33.289302",
+  "event_type": "security_violation",
+  "details": {
+    "error": "Invalid table name",
+    "table": null
+  }
+}
+2025-03-05 13:55:33,289 - INFO - {
+  "timestamp": "2025-03-05T13:55:33.289302",
+  "event_type": "authentication",
+  "user_id": "25305a9d-1163-418f-a0f2-4117ff48eb36",
+  "status": "success",
+  "details": {
+    "ip_address": "127.0.0.1",
+    "success": true
+  }
+}
+2025-03-05 13:55:33,290 - INFO - {
+  "timestamp": "2025-03-05T13:55:33.290305",
+  "type": "system",
+  "message": "Completed PUT /api/login - Status: 200 - Duration: 248.57ms"
+}
+2025-03-05 13:55:33,291 - INFO - {
+  "timestamp": "2025-03-05T13:55:33.291303",
+  "event_type": "api_request",
+  "user_id": "anonymous",
+  "status": "success",
+  "details": {
+    "method": "PUT",
+    "path": "/api/login",
+    "status_code": 200,
+    "duration_ms": 248.575,
+    "client_ip": "127.0.0.1"
+  }
+}
+2025-03-05 13:55:35,348 - INFO - {
+  "timestamp": "2025-03-05T13:55:35.348187",
+  "type": "system",
+  "message": "Incoming GET request to /api/user/me"
+}
+2025-03-05 13:55:35,350 - INFO - {
+  "timestamp": "2025-03-05T13:55:35.349189",
+  "event_type": "user_info_accessed",
+  "user_id": "25305a9d-1163-418f-a0f2-4117ff48eb36",
+  "status": "success",
+  "details": {
+    "accessed_user_id": "25305a9d-1163-418f-a0f2-4117ff48eb36"
+  }
+}
+2025-03-05 13:55:35,350 - INFO - {
+  "timestamp": "2025-03-05T13:55:35.350184",
+  "type": "system",
+  "message": "Completed GET /api/user/me - Status: 200 - Duration: 2.00ms"
+}
+2025-03-05 13:55:35,350 - INFO - {
+  "timestamp": "2025-03-05T13:55:35.350184",
+  "event_type": "api_request",
+  "user_id": "anonymous",
+  "status": "success",
+  "details": {
+    "method": "GET",
+    "path": "/api/user/me",
+    "status_code": 200,
+    "duration_ms": 1.997,
+    "client_ip": "127.0.0.1"
+  }
+}
+2025-03-05 14:51:03,850 - INFO - {
+  "timestamp": "2025-03-05T14:51:03.850260",
+  "type": "system",
+  "message": "Incoming GET request to /api/user/me"
+}
+2025-03-05 14:51:03,851 - INFO - {
+  "timestamp": "2025-03-05T14:51:03.851261",
+  "event_type": "token_validation_error",
+  "details": {
+    "error": "Signature verification failed"
+  }
+}
+2025-03-05 14:51:03,852 - ERROR - {
+  "timestamp": "2025-03-05T14:51:03.852348",
+  "error_type": "auth_error",
+  "error_message": "Invalid token",
+  "details": {
+    "token": "redacted"
+  }
+}
+2025-03-05 14:51:03,852 - ERROR - {
+  "timestamp": "2025-03-05T14:51:03.852348",
+  "error_type": "auth_error",
+  "error_message": "",
+  "details": {}
+}
+2025-03-05 14:51:03,853 - INFO - {
+  "timestamp": "2025-03-05T14:51:03.852348",
+  "type": "system",
+  "message": "Completed GET /api/user/me - Status: 401 - Duration: 2.09ms"
+}
+2025-03-05 14:51:03,853 - INFO - {
+  "timestamp": "2025-03-05T14:51:03.853345",
+  "event_type": "api_request",
+  "user_id": "anonymous",
+  "status": "success",
+  "details": {
+    "method": "GET",
+    "path": "/api/user/me",
+    "status_code": 401,
+    "duration_ms": 2.088,
+    "client_ip": "127.0.0.1"
+  }
+}
+2025-03-05 14:51:12,469 - INFO - {
+  "timestamp": "2025-03-05T14:51:12.469391",
+  "type": "system",
+  "message": "Incoming PUT request to /api/login"
+}
+2025-03-05 14:51:12,713 - INFO - {
+  "timestamp": "2025-03-05T14:51:12.713694",
+  "event_type": "security_violation",
+  "details": {
+    "error": "Invalid table name",
+    "table": null
+  }
+}
+2025-03-05 14:51:12,713 - INFO - {
+  "timestamp": "2025-03-05T14:51:12.713694",
+  "event_type": "authentication",
+  "user_id": "ed8e7cda-25d0-4e37-a918-87f910c6c61f",
+  "status": "success",
+  "details": {
+    "ip_address": "127.0.0.1",
+    "success": true
+  }
+}
+2025-03-05 14:51:12,715 - INFO - {
+  "timestamp": "2025-03-05T14:51:12.715200",
+  "type": "system",
+  "message": "Completed PUT /api/login - Status: 200 - Duration: 245.81ms"
+}
+2025-03-05 14:51:12,715 - INFO - {
+  "timestamp": "2025-03-05T14:51:12.715200",
+  "event_type": "api_request",
+  "user_id": "anonymous",
+  "status": "success",
+  "details": {
+    "method": "PUT",
+    "path": "/api/login",
+    "status_code": 200,
+    "duration_ms": 245.809,
+    "client_ip": "127.0.0.1"
+  }
+}
+2025-03-05 14:51:14,777 - INFO - {
+  "timestamp": "2025-03-05T14:51:14.777765",
+  "type": "system",
+  "message": "Incoming GET request to /api/user/me"
+}
+2025-03-05 14:51:14,779 - INFO - {
+  "timestamp": "2025-03-05T14:51:14.779895",
+  "event_type": "user_info_accessed",
+  "user_id": "ed8e7cda-25d0-4e37-a918-87f910c6c61f",
+  "status": "success",
+  "details": {
+    "accessed_user_id": "ed8e7cda-25d0-4e37-a918-87f910c6c61f"
+  }
+}
+2025-03-05 14:51:14,779 - INFO - {
+  "timestamp": "2025-03-05T14:51:14.779895",
+  "type": "system",
+  "message": "Completed GET /api/user/me - Status: 200 - Duration: 2.13ms"
+}
+2025-03-05 14:51:14,780 - INFO - {
+  "timestamp": "2025-03-05T14:51:14.779895",
+  "event_type": "api_request",
+  "user_id": "anonymous",
+  "status": "success",
+  "details": {
+    "method": "GET",
+    "path": "/api/user/me",
+    "status_code": 200,
+    "duration_ms": 2.13,
+    "client_ip": "127.0.0.1"
+  }
+}
+2025-03-05 14:53:07,855 - INFO - {
+  "timestamp": "2025-03-05T14:53:07.854639",
+  "type": "system",
+  "message": "Incoming POST request to /api/artifacts"
+}
+2025-03-05 14:53:07,880 - ERROR - {
+  "timestamp": "2025-03-05T14:53:07.879314",
+  "error_type": "artifact_creation_error",
+  "error_message": "Failed to create artifact",
+  "details": {
+    "name": "test"
+  }
+}
+2025-03-05 14:53:07,880 - ERROR - {
+  "timestamp": "2025-03-05T14:53:07.880314",
+  "error_type": "artifact_creation_error",
+  "error_message": "",
+  "details": {}
+}
+2025-03-05 14:53:07,880 - INFO - {
+  "timestamp": "2025-03-05T14:53:07.880314",
+  "type": "system",
+  "message": "Completed POST /api/artifacts - Status: 500 - Duration: 25.68ms"
+}
+2025-03-05 14:53:07,881 - INFO - {
+  "timestamp": "2025-03-05T14:53:07.881314",
+  "event_type": "api_request",
+  "user_id": "anonymous",
+  "status": "success",
+  "details": {
+    "method": "POST",
+    "path": "/api/artifacts",
+    "status_code": 500,
+    "duration_ms": 25.675,
+    "client_ip": "127.0.0.1"
+  }
+}
+2025-03-05 14:53:07,882 - ERROR - {
+  "timestamp": "2025-03-05T14:53:07.882314",
+  "error_type": "api_request_error",
+  "error_message": "500 Server Error: Internal Server Error for url: https://localhost:5000/api/artifacts",
+  "details": {}
+}
+2025-03-05 14:53:07,883 - ERROR - {
+  "timestamp": "2025-03-05T14:53:07.883314",
+  "error_type": "artifact_creation_error",
+  "error_message": "500 Server Error: Internal Server Error for url: https://localhost:5000/api/artifacts",
+  "details": {}
+}
+2025-03-05 14:53:30,833 - INFO - {
+  "timestamp": "2025-03-05T14:53:30.833029",
+  "type": "system",
+  "message": "Incoming POST request to /api/artifacts"
+}
+2025-03-05 14:53:30,876 - ERROR - {
+  "timestamp": "2025-03-05T14:53:30.876556",
+  "error_type": "artifact_creation_error",
+  "error_message": "Failed to create artifact",
+  "details": {
+    "name": "test"
+  }
+}
+2025-03-05 14:53:30,876 - ERROR - {
+  "timestamp": "2025-03-05T14:53:30.876556",
+  "error_type": "artifact_creation_error",
+  "error_message": "",
+  "details": {}
+}
+2025-03-05 14:53:30,877 - INFO - {
+  "timestamp": "2025-03-05T14:53:30.877556",
+  "type": "system",
+  "message": "Completed POST /api/artifacts - Status: 500 - Duration: 44.53ms"
+}
+2025-03-05 14:53:30,877 - INFO - {
+  "timestamp": "2025-03-05T14:53:30.877556",
+  "event_type": "api_request",
+  "user_id": "anonymous",
+  "status": "success",
+  "details": {
+    "method": "POST",
+    "path": "/api/artifacts",
+    "status_code": 500,
+    "duration_ms": 44.526999999999994,
+    "client_ip": "127.0.0.1"
+  }
+}
+2025-03-05 14:53:30,879 - ERROR - {
+  "timestamp": "2025-03-05T14:53:30.878556",
+  "error_type": "api_request_error",
+  "error_message": "500 Server Error: Internal Server Error for url: https://localhost:5000/api/artifacts",
+  "details": {}
+}
+2025-03-05 14:53:30,879 - ERROR - {
+  "timestamp": "2025-03-05T14:53:30.879556",
+  "error_type": "artifact_creation_error",
+  "error_message": "500 Server Error: Internal Server Error for url: https://localhost:5000/api/artifacts",
+  "details": {}
+}
+2025-03-05 14:57:41,420 - INFO - {
+  "timestamp": "2025-03-05T14:57:41.420304",
+  "type": "system",
+  "message": "Incoming GET request to /api/user/me"
+}
+2025-03-05 14:57:41,422 - INFO - {
+  "timestamp": "2025-03-05T14:57:41.422510",
+  "event_type": "user_info_accessed",
+  "user_id": "ed8e7cda-25d0-4e37-a918-87f910c6c61f",
+  "status": "success",
+  "details": {
+    "accessed_user_id": "ed8e7cda-25d0-4e37-a918-87f910c6c61f"
+  }
+}
+2025-03-05 14:57:41,422 - INFO - {
+  "timestamp": "2025-03-05T14:57:41.422510",
+  "type": "system",
+  "message": "Completed GET /api/user/me - Status: 200 - Duration: 2.21ms"
+}
+2025-03-05 14:57:41,423 - INFO - {
+  "timestamp": "2025-03-05T14:57:41.423894",
+  "event_type": "api_request",
+  "user_id": "anonymous",
+  "status": "success",
+  "details": {
+    "method": "GET",
+    "path": "/api/user/me",
+    "status_code": 200,
+    "duration_ms": 2.206,
+    "client_ip": "127.0.0.1"
+  }
+}
+2025-03-05 14:57:49,152 - INFO - {
+  "timestamp": "2025-03-05T14:57:49.152951",
+  "type": "system",
+  "message": "Incoming PUT request to /api/login"
+}
+2025-03-05 14:57:49,401 - INFO - {
+  "timestamp": "2025-03-05T14:57:49.401876",
+  "event_type": "security_violation",
+  "details": {
+    "error": "Invalid table name",
+    "table": null
+  }
+}
+2025-03-05 14:57:49,402 - INFO - {
+  "timestamp": "2025-03-05T14:57:49.402872",
+  "event_type": "authentication",
+  "user_id": "ed8e7cda-25d0-4e37-a918-87f910c6c61f",
+  "status": "success",
+  "details": {
+    "ip_address": "127.0.0.1",
+    "success": true
+  }
+}
+2025-03-05 14:57:49,403 - INFO - {
+  "timestamp": "2025-03-05T14:57:49.403842",
+  "type": "system",
+  "message": "Completed PUT /api/login - Status: 200 - Duration: 250.89ms"
+}
+2025-03-05 14:57:49,403 - INFO - {
+  "timestamp": "2025-03-05T14:57:49.403842",
+  "event_type": "api_request",
+  "user_id": "anonymous",
+  "status": "success",
+  "details": {
+    "method": "PUT",
+    "path": "/api/login",
+    "status_code": 200,
+    "duration_ms": 250.89099999999996,
+    "client_ip": "127.0.0.1"
+  }
+}
+2025-03-05 14:57:51,472 - INFO - {
+  "timestamp": "2025-03-05T14:57:51.472516",
+  "type": "system",
+  "message": "Incoming GET request to /api/user/me"
+}
+2025-03-05 14:57:51,474 - INFO - {
+  "timestamp": "2025-03-05T14:57:51.474513",
+  "event_type": "user_info_accessed",
+  "user_id": "ed8e7cda-25d0-4e37-a918-87f910c6c61f",
+  "status": "success",
+  "details": {
+    "accessed_user_id": "ed8e7cda-25d0-4e37-a918-87f910c6c61f"
+  }
+}
+2025-03-05 14:57:51,474 - INFO - {
+  "timestamp": "2025-03-05T14:57:51.474513",
+  "type": "system",
+  "message": "Completed GET /api/user/me - Status: 200 - Duration: 2.00ms"
+}
+2025-03-05 14:57:51,475 - INFO - {
+  "timestamp": "2025-03-05T14:57:51.475515",
+  "event_type": "api_request",
+  "user_id": "anonymous",
+  "status": "success",
+  "details": {
+    "method": "GET",
+    "path": "/api/user/me",
+    "status_code": 200,
+    "duration_ms": 1.997,
+    "client_ip": "127.0.0.1"
+  }
+}
+2025-03-05 14:58:07,672 - INFO - {
+  "timestamp": "2025-03-05T14:58:07.672594",
+  "type": "system",
+  "message": "Incoming POST request to /api/artifacts"
+}
+2025-03-05 14:58:07,830 - ERROR - {
+  "timestamp": "2025-03-05T14:58:07.830410",
+  "error_type": "api_request_error",
+  "error_message": "500 Server Error: Internal Server Error for url: https://localhost:5000/api/artifacts",
+  "details": {}
+}
+2025-03-05 14:59:22,403 - INFO - {
+  "timestamp": "2025-03-05T14:59:22.403379",
+  "type": "system",
+  "message": "Incoming GET request to /api/user/me"
+}
+2025-03-05 14:59:22,404 - INFO - {
+  "timestamp": "2025-03-05T14:59:22.404397",
+  "event_type": "token_validation_error",
+  "details": {
+    "error": "Signature verification failed"
+  }
+}
+2025-03-05 14:59:22,404 - ERROR - {
+  "timestamp": "2025-03-05T14:59:22.404397",
+  "error_type": "auth_error",
+  "error_message": "Invalid token",
+  "details": {
+    "token": "redacted"
+  }
+}
+2025-03-05 14:59:22,405 - ERROR - {
+  "timestamp": "2025-03-05T14:59:22.405493",
+  "error_type": "auth_error",
+  "error_message": "",
+  "details": {}
+}
+2025-03-05 14:59:22,405 - INFO - {
+  "timestamp": "2025-03-05T14:59:22.405493",
+  "type": "system",
+  "message": "Completed GET /api/user/me - Status: 401 - Duration: 2.11ms"
+}
+2025-03-05 14:59:22,405 - INFO - {
+  "timestamp": "2025-03-05T14:59:22.405493",
+  "event_type": "api_request",
+  "user_id": "anonymous",
+  "status": "success",
+  "details": {
+    "method": "GET",
+    "path": "/api/user/me",
+    "status_code": 401,
+    "duration_ms": 2.114,
+    "client_ip": "127.0.0.1"
+  }
+}
+2025-03-05 14:59:30,341 - INFO - {
+  "timestamp": "2025-03-05T14:59:30.341207",
+  "type": "system",
+  "message": "Incoming PUT request to /api/login"
+}
+2025-03-05 14:59:30,564 - INFO - {
+  "timestamp": "2025-03-05T14:59:30.564681",
+  "event_type": "security_violation",
+  "details": {
+    "error": "Invalid table name",
+    "table": null
+  }
+}
+2025-03-05 14:59:30,565 - INFO - {
+  "timestamp": "2025-03-05T14:59:30.565684",
+  "event_type": "authentication",
+  "user_id": "ed8e7cda-25d0-4e37-a918-87f910c6c61f",
+  "status": "success",
+  "details": {
+    "ip_address": "127.0.0.1",
+    "success": true
+  }
+}
+2025-03-05 14:59:30,566 - INFO - {
+  "timestamp": "2025-03-05T14:59:30.566684",
+  "type": "system",
+  "message": "Completed PUT /api/login - Status: 200 - Duration: 225.48ms"
+}
+2025-03-05 14:59:30,566 - INFO - {
+  "timestamp": "2025-03-05T14:59:30.566684",
+  "event_type": "api_request",
+  "user_id": "anonymous",
+  "status": "success",
+  "details": {
+    "method": "PUT",
+    "path": "/api/login",
+    "status_code": 200,
+    "duration_ms": 225.477,
+    "client_ip": "127.0.0.1"
+  }
+}
+2025-03-05 14:59:32,607 - INFO - {
+  "timestamp": "2025-03-05T14:59:32.607974",
+  "type": "system",
+  "message": "Incoming GET request to /api/user/me"
+}
+2025-03-05 14:59:32,610 - INFO - {
+  "timestamp": "2025-03-05T14:59:32.610472",
+  "event_type": "user_info_accessed",
+  "user_id": "ed8e7cda-25d0-4e37-a918-87f910c6c61f",
+  "status": "success",
+  "details": {
+    "accessed_user_id": "ed8e7cda-25d0-4e37-a918-87f910c6c61f"
+  }
+}
+2025-03-05 14:59:32,611 - INFO - {
+  "timestamp": "2025-03-05T14:59:32.611468",
+  "type": "system",
+  "message": "Completed GET /api/user/me - Status: 200 - Duration: 3.49ms"
+}
+2025-03-05 14:59:32,611 - INFO - {
+  "timestamp": "2025-03-05T14:59:32.611468",
+  "event_type": "api_request",
+  "user_id": "anonymous",
+  "status": "success",
+  "details": {
+    "method": "GET",
+    "path": "/api/user/me",
+    "status_code": 200,
+    "duration_ms": 3.494,
+    "client_ip": "127.0.0.1"
+  }
+}
+2025-03-05 15:00:31,801 - INFO - {
+  "timestamp": "2025-03-05T15:00:31.801522",
+  "type": "system",
+  "message": "Incoming POST request to /api/artifacts"
+}
+2025-03-05 15:00:31,816 - ERROR - {
+  "timestamp": "2025-03-05T15:00:31.816316",
+  "error_type": "api_request_error",
+  "error_message": "500 Server Error: Internal Server Error for url: https://localhost:5000/api/artifacts",
+  "details": {}
+}
+2025-03-05 15:05:02,394 - INFO - {
+  "timestamp": "2025-03-05T15:05:02.394352",
+  "type": "system",
+  "message": "Incoming POST request to /api/artifacts"
+}
+2025-03-05 15:05:02,407 - ERROR - {
+  "timestamp": "2025-03-05T15:05:02.407543",
+  "error_type": "api_request_error",
+  "error_message": "500 Server Error: Internal Server Error for url: https://localhost:5000/api/artifacts",
+  "details": {}
+}
+2025-03-05 15:05:28,747 - INFO - {
+  "timestamp": "2025-03-05T15:05:28.747875",
+  "type": "system",
+  "message": "Incoming POST request to /api/artifacts"
+}
+2025-03-05 15:05:28,760 - ERROR - {
+  "timestamp": "2025-03-05T15:05:28.760868",
+  "error_type": "api_request_error",
+  "error_message": "500 Server Error: Internal Server Error for url: https://localhost:5000/api/artifacts",
+  "details": {}
+}
+2025-03-05 15:08:40,606 - INFO - {
+  "timestamp": "2025-03-05T15:08:40.606090",
+  "type": "system",
+  "message": "Incoming GET request to /api/user/me"
+}
+2025-03-05 15:08:40,607 - INFO - {
+  "timestamp": "2025-03-05T15:08:40.607089",
+  "event_type": "token_validation_error",
+  "details": {
+    "error": "Signature verification failed"
+  }
+}
+2025-03-05 15:08:40,607 - ERROR - {
+  "timestamp": "2025-03-05T15:08:40.607089",
+  "error_type": "auth_error",
+  "error_message": "Invalid token",
+  "details": {
+    "token": "redacted"
+  }
+}
+2025-03-05 15:08:40,607 - ERROR - {
+  "timestamp": "2025-03-05T15:08:40.607089",
+  "error_type": "auth_error",
+  "error_message": "",
+  "details": {}
+}
+2025-03-05 15:08:40,608 - INFO - {
+  "timestamp": "2025-03-05T15:08:40.608095",
+  "type": "system",
+  "message": "Completed GET /api/user/me - Status: 401 - Duration: 2.00ms"
+}
+2025-03-05 15:08:40,608 - INFO - {
+  "timestamp": "2025-03-05T15:08:40.608618",
+  "event_type": "api_request",
+  "user_id": "anonymous",
+  "status": "success",
+  "details": {
+    "method": "GET",
+    "path": "/api/user/me",
+    "status_code": 401,
+    "duration_ms": 2.005,
+    "client_ip": "127.0.0.1"
+  }
+}
+2025-03-05 15:11:26,387 - INFO - {
+  "timestamp": "2025-03-05T15:11:26.387050",
+  "type": "system",
+  "message": "Incoming GET request to /api/user/me"
+}
+2025-03-05 15:11:26,388 - INFO - {
+  "timestamp": "2025-03-05T15:11:26.388049",
+  "event_type": "token_validation_error",
+  "details": {
+    "error": "Signature verification failed"
+  }
+}
+2025-03-05 15:11:26,388 - ERROR - {
+  "timestamp": "2025-03-05T15:11:26.388049",
+  "error_type": "auth_error",
+  "error_message": "Invalid token",
+  "details": {
+    "token": "redacted"
+  }
+}
+2025-03-05 15:11:26,388 - ERROR - {
+  "timestamp": "2025-03-05T15:11:26.388049",
+  "error_type": "auth_error",
+  "error_message": "",
+  "details": {}
+}
+2025-03-05 15:11:26,388 - INFO - {
+  "timestamp": "2025-03-05T15:11:26.388049",
+  "type": "system",
+  "message": "Completed GET /api/user/me - Status: 401 - Duration: 1.00ms"
+}
+2025-03-05 15:11:26,389 - INFO - {
+  "timestamp": "2025-03-05T15:11:26.388049",
+  "event_type": "api_request",
+  "user_id": "anonymous",
+  "status": "success",
+  "details": {
+    "method": "GET",
+    "path": "/api/user/me",
+    "status_code": 401,
+    "duration_ms": 0.9990000000000001,
+    "client_ip": "127.0.0.1"
+  }
+}
+2025-03-05 15:11:37,742 - INFO - {
+  "timestamp": "2025-03-05T15:11:37.742776",
+  "type": "system",
+  "message": "Incoming PUT request to /api/login"
+}
+2025-03-05 15:11:37,970 - INFO - {
+  "timestamp": "2025-03-05T15:11:37.970121",
+  "event_type": "security_violation",
+  "details": {
+    "error": "Invalid table name",
+    "table": null
+  }
+}
+2025-03-05 15:11:37,970 - INFO - {
+  "timestamp": "2025-03-05T15:11:37.970121",
+  "event_type": "authentication",
+  "user_id": "ed8e7cda-25d0-4e37-a918-87f910c6c61f",
+  "status": "success",
+  "details": {
+    "ip_address": "127.0.0.1",
+    "success": true
+  }
+}
+2025-03-05 15:11:37,971 - INFO - {
+  "timestamp": "2025-03-05T15:11:37.971122",
+  "type": "system",
+  "message": "Completed PUT /api/login - Status: 200 - Duration: 228.35ms"
+}
+2025-03-05 15:11:37,971 - INFO - {
+  "timestamp": "2025-03-05T15:11:37.971122",
+  "event_type": "api_request",
+  "user_id": "anonymous",
+  "status": "success",
+  "details": {
+    "method": "PUT",
+    "path": "/api/login",
+    "status_code": 200,
+    "duration_ms": 228.346,
+    "client_ip": "127.0.0.1"
+  }
+}
+2025-03-05 15:11:40,036 - INFO - {
+  "timestamp": "2025-03-05T15:11:40.036195",
+  "type": "system",
+  "message": "Incoming GET request to /api/user/me"
+}
+2025-03-05 15:11:40,038 - INFO - {
+  "timestamp": "2025-03-05T15:11:40.038190",
+  "event_type": "user_info_accessed",
+  "user_id": "ed8e7cda-25d0-4e37-a918-87f910c6c61f",
+  "status": "success",
+  "details": {
+    "accessed_user_id": "ed8e7cda-25d0-4e37-a918-87f910c6c61f"
+  }
+}
+2025-03-05 15:11:40,039 - INFO - {
+  "timestamp": "2025-03-05T15:11:40.039191",
+  "type": "system",
+  "message": "Completed GET /api/user/me - Status: 200 - Duration: 3.00ms"
+}
+2025-03-05 15:11:40,039 - INFO - {
+  "timestamp": "2025-03-05T15:11:40.039191",
+  "event_type": "api_request",
+  "user_id": "anonymous",
+  "status": "success",
+  "details": {
+    "method": "GET",
+    "path": "/api/user/me",
+    "status_code": 200,
+    "duration_ms": 2.996,
+    "client_ip": "127.0.0.1"
+  }
+}

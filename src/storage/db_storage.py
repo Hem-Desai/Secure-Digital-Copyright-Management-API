@@ -61,6 +61,27 @@ class SQLiteStorage:
                 ip_address TEXT,
                 FOREIGN KEY (user_id) REFERENCES users(id)
             )'''
+        },
+        'posts': {
+            'columns': ['id', 'title', 'content', 'author_id', 'created_at', 'updated_at'],
+            'query': '''CREATE TABLE IF NOT EXISTS posts (
+                id TEXT PRIMARY KEY,
+                title TEXT NOT NULL,
+                content TEXT NOT NULL,
+                author_id TEXT NOT NULL,
+                created_at REAL NOT NULL,
+                updated_at REAL NOT NULL,
+                FOREIGN KEY (author_id) REFERENCES users(id)
+            )'''
+        },
+        'post_tags': {
+            'columns': ['id', 'post_id', 'tag'],
+            'query': '''CREATE TABLE IF NOT EXISTS post_tags (
+                id TEXT PRIMARY KEY,
+                post_id TEXT NOT NULL,
+                tag TEXT NOT NULL,
+                FOREIGN KEY (post_id) REFERENCES posts(id)
+            )'''
         }
     }
 
@@ -86,6 +107,16 @@ class SQLiteStorage:
             'select_by_id': 'SELECT * FROM audit_log WHERE id = ?',
             'select_all': 'SELECT * FROM audit_log',
             'delete': 'DELETE FROM audit_log WHERE id = ?'
+        },
+        'posts': {
+            'select_by_id': 'SELECT * FROM posts WHERE id = ?',
+            'select_all': 'SELECT * FROM posts',
+            'delete': 'DELETE FROM posts WHERE id = ?'
+        },
+        'post_tags': {
+            'select_by_id': 'SELECT * FROM post_tags WHERE id = ?',
+            'select_all': 'SELECT * FROM post_tags',
+            'delete': 'DELETE FROM post_tags WHERE id = ?'
         }
     }
 
@@ -316,6 +347,191 @@ class SQLiteStorage:
                     """, (datetime.now().timestamp(), username))
                 conn.commit()
                 return True
+                
+        except sqlite3.Error as e:
+            self.logger.log_system_event("database_error", {"error": str(e)})
+            return False 
+
+    def create_post(self, post_data: Dict[str, Any]) -> Optional[str]:
+        """Create a new post with tags"""
+        try:
+            # Start transaction
+            with sqlite3.connect(self.db_path) as conn:
+                cursor = conn.cursor()
+                
+                # Insert post
+                post_id = os.urandom(16).hex()
+                cursor.execute('''
+                    INSERT INTO posts (id, title, content, author_id, created_at, updated_at)
+                    VALUES (?, ?, ?, ?, ?, ?)
+                ''', (
+                    post_id,
+                    post_data["title"],
+                    post_data["content"],
+                    post_data["author_id"],
+                    datetime.now().timestamp(),
+                    datetime.now().timestamp()
+                ))
+                
+                # Insert tags
+                for tag in post_data.get("tags", []):
+                    tag_id = os.urandom(16).hex()
+                    cursor.execute('''
+                        INSERT INTO post_tags (id, post_id, tag)
+                        VALUES (?, ?, ?)
+                    ''', (tag_id, post_id, tag))
+                    
+                conn.commit()
+                return post_id
+                
+        except sqlite3.Error as e:
+            self.logger.log_system_event("database_error", {"error": str(e)})
+            return None
+            
+    def get_post(self, post_id: str) -> Optional[Dict[str, Any]]:
+        """Get post with its tags"""
+        try:
+            with sqlite3.connect(self.db_path) as conn:
+                conn.row_factory = sqlite3.Row
+                cursor = conn.cursor()
+                
+                # Get post
+                cursor.execute('''
+                    SELECT p.*, u.username as author_name
+                    FROM posts p
+                    JOIN users u ON p.author_id = u.id
+                    WHERE p.id = ?
+                ''', (post_id,))
+                post = cursor.fetchone()
+                
+                if not post:
+                    return None
+                    
+                # Get tags
+                cursor.execute('SELECT tag FROM post_tags WHERE post_id = ?', (post_id,))
+                tags = [row[0] for row in cursor.fetchall()]
+                
+                post_dict = dict(post)
+                post_dict["tags"] = tags
+                return post_dict
+                
+        except sqlite3.Error as e:
+            self.logger.log_system_event("database_error", {"error": str(e)})
+            return None
+            
+    def list_posts(self, filters: Optional[Dict[str, Any]] = None) -> List[Dict[str, Any]]:
+        """List posts with optional filters"""
+        try:
+            with sqlite3.connect(self.db_path) as conn:
+                conn.row_factory = sqlite3.Row
+                cursor = conn.cursor()
+                
+                query = '''
+                    SELECT p.*, u.username as author_name
+                    FROM posts p
+                    JOIN users u ON p.author_id = u.id
+                '''
+                params = []
+                
+                if filters:
+                    conditions = []
+                    if "author_id" in filters:
+                        conditions.append("p.author_id = ?")
+                        params.append(filters["author_id"])
+                    if "tag" in filters:
+                        conditions.append('''
+                            p.id IN (
+                                SELECT post_id FROM post_tags 
+                                WHERE tag = ?
+                            )
+                        ''')
+                        params.append(filters["tag"])
+                        
+                    if conditions:
+                        query += " WHERE " + " AND ".join(conditions)
+                        
+                cursor.execute(query, params)
+                posts = []
+                
+                for post in cursor.fetchall():
+                    post_dict = dict(post)
+                    # Get tags for each post
+                    cursor.execute(
+                        'SELECT tag FROM post_tags WHERE post_id = ?',
+                        (post_dict["id"],)
+                    )
+                    post_dict["tags"] = [row[0] for row in cursor.fetchall()]
+                    posts.append(post_dict)
+                    
+                return posts
+                
+        except sqlite3.Error as e:
+            self.logger.log_system_event("database_error", {"error": str(e)})
+            return []
+            
+    def update_post(self, post_id: str, post_data: Dict[str, Any]) -> bool:
+        """Update post and its tags"""
+        try:
+            with sqlite3.connect(self.db_path) as conn:
+                cursor = conn.cursor()
+                
+                # Update post
+                update_fields = []
+                params = []
+                
+                if "title" in post_data:
+                    update_fields.append("title = ?")
+                    params.append(post_data["title"])
+                if "content" in post_data:
+                    update_fields.append("content = ?")
+                    params.append(post_data["content"])
+                    
+                if update_fields:
+                    update_fields.append("updated_at = ?")
+                    params.append(datetime.now().timestamp())
+                    params.append(post_id)
+                    
+                    query = f'''
+                        UPDATE posts 
+                        SET {", ".join(update_fields)}
+                        WHERE id = ?
+                    '''
+                    cursor.execute(query, params)
+                    
+                # Update tags if provided
+                if "tags" in post_data:
+                    # Delete existing tags
+                    cursor.execute('DELETE FROM post_tags WHERE post_id = ?', (post_id,))
+                    
+                    # Insert new tags
+                    for tag in post_data["tags"]:
+                        tag_id = os.urandom(16).hex()
+                        cursor.execute('''
+                            INSERT INTO post_tags (id, post_id, tag)
+                            VALUES (?, ?, ?)
+                        ''', (tag_id, post_id, tag))
+                        
+                conn.commit()
+                return True
+                
+        except sqlite3.Error as e:
+            self.logger.log_system_event("database_error", {"error": str(e)})
+            return False
+            
+    def delete_post(self, post_id: str) -> bool:
+        """Delete post and its tags"""
+        try:
+            with sqlite3.connect(self.db_path) as conn:
+                cursor = conn.cursor()
+                
+                # Delete tags first (due to foreign key constraint)
+                cursor.execute('DELETE FROM post_tags WHERE post_id = ?', (post_id,))
+                
+                # Delete post
+                cursor.execute('DELETE FROM posts WHERE id = ?', (post_id,))
+                
+                conn.commit()
+                return cursor.rowcount > 0
                 
         except sqlite3.Error as e:
             self.logger.log_system_event("database_error", {"error": str(e)})

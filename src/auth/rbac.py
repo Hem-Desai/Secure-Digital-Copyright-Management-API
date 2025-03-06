@@ -71,6 +71,7 @@ class RBACManager:
             user = User(
                 id=user_data["id"],
                 username=user_data["username"],
+                email=user_data["email"],
                 password_hash=user_data["password_hash"],
                 role=UserRole(user_data["role"]),
                 created_at=user_data["created_at"],
@@ -160,9 +161,11 @@ class RBACManager:
         )
         
     def authenticate(self, username: str, password: str) -> Optional[User]:
-        """Authenticate user and verify password"""
+        """Authenticate user with username and password"""
         user_data = self.db.get_user_by_username(username)
         if not user_data:
+            # Use constant time comparison even for non-existent users
+            bcrypt.checkpw(password.encode('utf-8'), bcrypt.gensalt())
             return None
             
         # Check for account lockout
@@ -170,16 +173,34 @@ class RBACManager:
             return None
             
         # Verify password with constant-time comparison
-        if self.verify_password(password, user_data["password_hash"]):
-            return User(
-                id=user_data["id"],
-                username=user_data["username"],
-                password_hash=user_data["password_hash"],
-                role=UserRole(user_data["role"]),
-                created_at=user_data["created_at"]
-            )
+        try:
+            password_bytes = password.encode('utf-8')
+            stored_hash = user_data["password_hash"].encode('utf-8')
             
-        return None
+            if bcrypt.checkpw(password_bytes, stored_hash):
+                # Reset failed attempts on success
+                user_data["failed_login_attempts"] = 0
+                user_data["last_login_attempt"] = datetime.now().timestamp()
+                self.db.update(user_data)
+                
+                return User(
+                    id=user_data["id"],
+                    username=user_data["username"],
+                    email=user_data["email"],
+                    password_hash=user_data["password_hash"],
+                    role=UserRole(user_data["role"]),
+                    created_at=user_data["created_at"]
+                )
+                
+            # Track failed attempt
+            user_data["failed_login_attempts"] = user_data.get("failed_login_attempts", 0) + 1
+            user_data["last_login_attempt"] = datetime.now().timestamp()
+            self.db.update(user_data)
+            return None
+            
+        except Exception:
+            # If any error occurs during verification, fail securely
+            return None
     
     def check_permission(self, user: User, permission: Permission, 
                         resource_id: Optional[str] = None) -> bool:

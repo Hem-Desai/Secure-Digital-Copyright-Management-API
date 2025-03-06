@@ -21,12 +21,17 @@ def init_db():
     
     # Drop existing tables
     c.execute('DROP TABLE IF EXISTS users')
+    c.execute('DROP TABLE IF EXISTS posts')
+    c.execute('DROP TABLE IF EXISTS post_tags')
+    c.execute('DROP TABLE IF EXISTS user_artifacts')
+    c.execute('DROP TABLE IF EXISTS artifacts')
     
     # Create users table
     c.execute('''
     CREATE TABLE users (
         id TEXT PRIMARY KEY,
         username TEXT UNIQUE NOT NULL,
+        email TEXT UNIQUE NOT NULL,
         password_hash TEXT NOT NULL,
         role TEXT NOT NULL,
         created_at REAL NOT NULL,
@@ -36,14 +41,63 @@ def init_db():
     )
     ''')
     
+    # Create posts table
+    c.execute('''
+    CREATE TABLE posts (
+        id TEXT PRIMARY KEY,
+        title TEXT NOT NULL,
+        content TEXT NOT NULL,
+        author_id TEXT NOT NULL,
+        created_at REAL NOT NULL,
+        updated_at REAL NOT NULL,
+        FOREIGN KEY (author_id) REFERENCES users(id)
+    )
+    ''')
+    
+    # Create post_tags table
+    c.execute('''
+    CREATE TABLE post_tags (
+        id TEXT PRIMARY KEY,
+        post_id TEXT NOT NULL,
+        tag TEXT NOT NULL,
+        FOREIGN KEY (post_id) REFERENCES posts(id)
+    )
+    ''')
+    
+    # Create artifacts table
+    c.execute('''
+    CREATE TABLE artifacts (
+        id TEXT PRIMARY KEY,
+        name TEXT NOT NULL,
+        content_type TEXT NOT NULL,
+        owner_id TEXT NOT NULL,
+        file_size INTEGER NOT NULL,
+        created_at REAL NOT NULL,
+        encryption_key_id TEXT NOT NULL,
+        checksum TEXT NOT NULL,
+        FOREIGN KEY (owner_id) REFERENCES users(id)
+    )
+    ''')
+    
+    # Create user_artifacts table
+    c.execute('''
+    CREATE TABLE user_artifacts (
+        id TEXT PRIMARY KEY,
+        user_id TEXT NOT NULL,
+        artifact_id TEXT NOT NULL,
+        FOREIGN KEY (user_id) REFERENCES users(id),
+        FOREIGN KEY (artifact_id) REFERENCES artifacts(id)
+    )
+    ''')
+    
     # Create default users
     default_users = [
-        ('admin', UserRole.ADMIN),
-        ('owner', UserRole.OWNER),
-        ('viewer', UserRole.VIEWER)
+        ('admin', 'admin@dcm.com', UserRole.ADMIN),
+        ('owner', 'owner@dcm.com', UserRole.OWNER),
+        ('viewer', 'viewer@dcm.com', UserRole.VIEWER)
     ]
     
-    for username, role in default_users:
+    for username, email, role in default_users:
         print(f"\nCreating {role.value} user: {username}")
         while True:
             password = getpass.getpass(f"Enter password for {username}: ")
@@ -77,6 +131,7 @@ def init_db():
         user = User(
             id=str(uuid.uuid4()),
             username=username,
+            email=email,
             password_hash=password_hash.decode('utf-8'),
             role=role,
             created_at=time.time(),
@@ -87,12 +142,13 @@ def init_db():
         
         # Insert into database
         c.execute('''
-        INSERT INTO users (id, username, password_hash, role, created_at, artifacts, 
+        INSERT INTO users (id, username, email, password_hash, role, created_at, artifacts, 
                          failed_login_attempts, last_login_attempt)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
         ''', (
             user.id,
             user.username,
+            user.email,
             user.password_hash,
             user.role.value,
             user.created_at,
