@@ -152,9 +152,13 @@ class RBACManager:
         # Create user with current timestamp
         created_at = datetime.now().timestamp()
         
+        # Generate default email from username
+        email = f"{username}@dcm.com"
+        
         return User(
             id=user_id,
             username=username,
+            email=email,
             password_hash=password_hash,
             role=role,
             created_at=created_at

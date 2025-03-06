@@ -1,6 +1,6 @@
 # Secure Digital Copyright Management System
 
-A secure CLI-based application for managing digital copyright artifacts with role-based access control, encryption, and support for various media file types.
+A secure API and CLI-based application for managing digital copyright artifacts with role-based access control, encryption, and support for various media file types.
 
 ## Features
 
@@ -14,6 +14,7 @@ A secure CLI-based application for managing digital copyright artifacts with rol
 
   - AES-256 encryption for all stored files
   - Bcrypt password hashing with high work factor (12 rounds)
+  - JWT-based authentication for API access
   - Secure password requirements enforcement
   - File integrity verification with checksums
   - Rate limiting for login attempts
@@ -21,6 +22,15 @@ A secure CLI-based application for managing digital copyright artifacts with rol
   - Comprehensive audit logging
   - Path traversal protection
   - Secure file size validation
+
+- **API Features**
+
+  - RESTful API built with FastAPI
+  - Swagger/OpenAPI documentation
+  - Token-based authentication
+  - Rate limiting
+  - Input validation
+  - Error handling
 
 - **Media File Support**
   - Audio: MP3, WAV
@@ -32,6 +42,25 @@ A secure CLI-based application for managing digital copyright artifacts with rol
   - Media metadata preservation
 
 ## Installation
+
+### Using Docker (Recommended)
+
+1. Clone the repository:
+
+```bash
+git clone [repository-url]
+cd [repository-name]
+```
+
+2. Build and run using Docker Compose:
+
+```bash
+docker-compose up --build
+```
+
+This will start both the API server and the CLI application in containers.
+
+### Manual Installation
 
 1. Clone the repository:
 
@@ -68,6 +97,29 @@ During initialization, you'll be prompted to create secure passwords for the def
 - At least one special character (!@#$%^&\*(),.?":{}|<>)
 - No common patterns or repeated characters
 
+## Project Structure
+
+```
+├── src/
+│   ├── api/          # FastAPI routes and endpoints
+│   ├── auth/         # Authentication and authorization
+│   ├── client/       # CLI client implementation
+│   ├── encryption/   # Encryption/decryption utilities
+│   ├── models/       # Data models and schemas
+│   ├── services/     # Business logic services
+│   ├── storage/      # File storage management
+│   ├── utils/        # Helper utilities
+│   ├── cli.py        # CLI interface
+│   └── main.py       # API server entry point
+├── tests/            # Test suite
+├── artifacts/        # Encrypted artifact storage
+├── certs/           # SSL/TLS certificates
+├── data/            # Application data
+├── logs/            # Application logs
+├── scripts/         # Utility scripts
+└── secure_storage/  # Secure file storage
+```
+
 ## Default Users
 
 The system comes with three default user roles:
@@ -91,15 +143,51 @@ The system comes with three default user roles:
 
 ## Usage
 
-Run the application:
+The application consists of two components that need to be started in sequence:
+
+### 1. Start the Backend API Server
+
+First, start the backend API server using one of these methods:
+
+#### Using Docker (Recommended):
 
 ```bash
+# Build and start the API server
+docker-compose up --build
+
+# Or run in detached mode
+docker-compose up -d --build
+```
+
+#### Manual Method:
+
+```bash
+# Activate virtual environment first
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Start the API server
+uvicorn src.api.main:app --host 0.0.0.0 --port 8000 --reload
+```
+
+The API server will be available at:
+
+- API Endpoint: http://localhost:8000
+- API Documentation: http://localhost:8000/docs
+- ReDoc Documentation: http://localhost:8000/redoc
+
+### 2. Start the CLI Application
+
+After the API server is running, open a new terminal and start the CLI application:
+
+```bash
+# Activate virtual environment if running manually
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Start the CLI application
 python main.py
 ```
 
-### Main Menu
-
-When you start the application, you'll see:
+You will see the main menu:
 
 ```
 Digital Copyright Management System
@@ -108,7 +196,28 @@ Digital Copyright Management System
 2. Exit
 ```
 
-### User Menu
+### 3. Login with Default Credentials
+
+The system comes with three default users:
+
+1. Admin User
+
+   - Username: `admin`
+   - Password: `Adm!nCtr1#2024`
+   - Full system access
+
+2. Owner User
+
+   - Username: `owner`
+   - Password: `Own3rSh!p$2024`
+   - Can manage owned artifacts
+
+3. Viewer User
+   - Username: `viewer`
+   - Password: `V!ewUs3r@2024`
+   - Read-only access
+
+### 4. User Menu
 
 After logging in, you'll see options based on your role:
 
@@ -124,40 +233,73 @@ Welcome [username]!
 8. Exit
 ```
 
-### Artifact Management
+### Troubleshooting
 
-1. **Upload Artifact**
+1. If you see connection errors in the CLI:
 
-   - Select from supported file types
-   - Automatic ID generation
-   - File size validation
-   - Content type detection
+   - Make sure the API server is running and accessible
+   - Check if port 8000 is not being used by another application
+   - Verify that the API server started without errors
 
-2. **List Artifacts**
-   Shows a formatted table with:
+2. If login fails:
 
+   - Ensure you're using the correct credentials
+   - Check if the database was initialized properly
+   - Verify that the API server logs show the login attempt
+
+3. If you can't upload/download artifacts:
+   - Check if the necessary directories exist
+   - Verify you have the correct permissions
+   - Ensure the file size is within limits (100MB)
+
+## API Documentation
+
+The API documentation is available at:
+
+- Swagger UI: `http://localhost:8000/docs`
+- ReDoc: `http://localhost:8000/redoc`
+
+### Key API Endpoints
+
+- `POST /auth/token` - Get authentication token
+- `GET /artifacts` - List available artifacts
+- `POST /artifacts/upload` - Upload new artifact
+- `GET /artifacts/{id}/download` - Download artifact
+- `DELETE /artifacts/{id}` - Delete artifact
+- `GET /users/me` - Get current user info
+
+## Development
+
+### Code Quality Tools
+
+The project uses several tools to maintain code quality:
+
+```bash
+# Format code
+black src/ tests/
+
+# Lint code
+flake8 src/ tests/
+
+# Type checking
+mypy src/
+
+# Security checks
+bandit -r src/
+
+# Run pre-commit hooks
+pre-commit run --all-files
 ```
-===============================================================
-| ID                 | Name          | Type       | Size (bytes) |
-===============================================================
-| 123e4567-e89b-12d3| My Song       | audio/mp3  | 1048576     |
-| 987fcdeb-51a2-3c4d| Lyrics Doc    | lyrics     | 2048        |
-===============================================================
-Total artifacts: 2
+
+### Running Tests
+
+```bash
+# Run tests with coverage
+pytest --cov=src tests/
+
+# Generate HTML coverage report
+pytest --cov=src --cov-report=html tests/
 ```
-
-Admin users see additional owner information.
-
-3. **Download Artifact**
-
-   - Secure decryption
-   - Integrity verification
-   - Permission validation
-
-4. **Delete Artifact**
-   - Available to Admin and Owner roles
-   - Permission checks
-   - Secure cleanup
 
 ## Security Best Practices
 
@@ -174,12 +316,28 @@ Admin users see additional owner information.
    - Monitor audit logs regularly
    - Backup database securely
    - Use secure communication channels
+   - Enable SSL/TLS for API communication
+   - Regular security audits
 
 3. File Security:
    - Verify file integrity after transfers
    - Scan uploads for malware
    - Maintain secure backups
    - Follow least privilege principle
+   - Regular backup verification
+
+## Environment Variables
+
+Create a `.env` file with the following variables:
+
+```
+SECRET_KEY=your-secret-key
+ALGORITHM=HS256
+ACCESS_TOKEN_EXPIRE_MINUTES=30
+DATABASE_URL=sqlite:///./secure_dcm.db
+STORAGE_PATH=./secure_storage
+MAX_FILE_SIZE=104857600
+```
 
 ## Design Patterns Used
 

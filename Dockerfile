@@ -12,9 +12,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy application code
 COPY . .
 
-# Generate SSL certificates
-RUN python scripts/generate_certs.py
-
 # Create necessary directories
 RUN mkdir -p data logs
 
@@ -22,4 +19,4 @@ RUN mkdir -p data logs
 EXPOSE 8000
 
 # Run the application
-CMD ["uvicorn", "src.api.main:app", "--host", "0.0.0.0", "--port", "8000", "--ssl-keyfile", "certs/key.pem", "--ssl-certfile", "certs/cert.pem"] 
+CMD ["uvicorn", "src.api.main:app", "--host", "0.0.0.0", "--port", "8000"] 

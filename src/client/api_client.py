@@ -10,14 +10,14 @@ import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 class APIClient:
-    def __init__(self, base_url: str = "https://localhost:5000"):
+    def __init__(self, base_url: str = "http://localhost:8000"):
         """Initialize API client with base URL"""
         self.base_url = base_url
         self.token: Optional[str] = None
         self.logger = AuditLogger()
         
         # Verify SSL certificate in production
-        self.verify_ssl = not base_url.startswith("https://localhost")
+        self.verify_ssl = not base_url.startswith("http://localhost")
         
     def _get_headers(self) -> Dict[str, str]:
         """Get request headers with authorization if token exists"""

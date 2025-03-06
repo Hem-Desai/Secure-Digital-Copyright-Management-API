@@ -1644,3 +1644,253 @@
     "client_ip": "127.0.0.1"
   }
 }
+2025-03-06 18:42:08,959 - ERROR - {
+  "timestamp": "2025-03-06T18:42:08.959978",
+  "error_type": "api_request_error",
+  "error_message": "HTTPSConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/me (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000002127BB88130>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+  "details": {}
+}
+2025-03-06 18:42:45,169 - ERROR - {
+  "timestamp": "2025-03-06T18:42:45.169545",
+  "error_type": "api_request_error",
+  "error_message": "HTTPSConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/login (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000002127BB9B0A0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+  "details": {}
+}
+2025-03-06 18:43:56,723 - ERROR - {
+  "timestamp": "2025-03-06T18:43:56.723640",
+  "error_type": "api_request_error",
+  "error_message": "HTTPSConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/me (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000020DAAEF8130>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+  "details": {}
+}
+2025-03-06 18:44:08,172 - ERROR - {
+  "timestamp": "2025-03-06T18:44:08.172327",
+  "error_type": "api_request_error",
+  "error_message": "HTTPSConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/login (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000020DAAF0B0A0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+  "details": {}
+}
+2025-03-06 18:44:19,772 - ERROR - {
+  "timestamp": "2025-03-06T18:44:19.772481",
+  "error_type": "api_request_error",
+  "error_message": "HTTPSConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/login (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000020DAAEF8910>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+  "details": {}
+}
+2025-03-06 18:44:35,870 - ERROR - {
+  "timestamp": "2025-03-06T18:44:35.870968",
+  "error_type": "api_request_error",
+  "error_message": "HTTPSConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/login (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000020DAAEDD280>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+  "details": {}
+}
+2025-03-06 18:45:04,308 - ERROR - {
+  "timestamp": "2025-03-06T18:45:04.308969",
+  "error_type": "api_request_error",
+  "error_message": "HTTPSConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/login (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000020DAAF0BE20>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+  "details": {}
+}
+2025-03-06 18:47:32,124 - ERROR - {
+  "timestamp": "2025-03-06T18:47:32.124114",
+  "error_type": "api_request_error",
+  "error_message": "HTTPSConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /api/user/me (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001F606698190>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+  "details": {}
+}
+2025-03-06 18:49:05,834 - ERROR - {
+  "timestamp": "2025-03-06T18:49:05.834847",
+  "error_type": "api_request_error",
+  "error_message": "HTTPSConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /api/user/me (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000284914CC1F0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+  "details": {}
+}
+2025-03-06 18:49:23,296 - ERROR - {
+  "timestamp": "2025-03-06T18:49:23.296248",
+  "error_type": "api_request_error",
+  "error_message": "HTTPSConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /api/login (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000284914EC160>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+  "details": {}
+}
+2025-03-06 13:19:52,661 - INFO - {
+  "timestamp": "2025-03-06T13:19:52.661073",
+  "type": "system",
+  "message": "Incoming PUT request to /api/login"
+}
+2025-03-06 13:19:52,867 - INFO - {
+  "timestamp": "2025-03-06T13:19:52.867870",
+  "event_type": "security_violation",
+  "details": {
+    "error": "Invalid table name",
+    "table": null
+  }
+}
+2025-03-06 13:19:52,869 - INFO - {
+  "timestamp": "2025-03-06T13:19:52.869125",
+  "event_type": "authentication",
+  "user_id": "eb23cf58-dbc4-4431-a624-2e5dab5ef950",
+  "status": "success",
+  "details": {
+    "ip_address": "172.19.0.1",
+    "success": true
+  }
+}
+2025-03-06 13:19:52,870 - INFO - {
+  "timestamp": "2025-03-06T13:19:52.870666",
+  "type": "system",
+  "message": "Completed PUT /api/login - Status: 200 - Duration: 209.63ms"
+}
+2025-03-06 13:19:52,871 - INFO - {
+  "timestamp": "2025-03-06T13:19:52.871209",
+  "event_type": "api_request",
+  "user_id": "anonymous",
+  "status": "success",
+  "details": {
+    "method": "PUT",
+    "path": "/api/login",
+    "status_code": 200,
+    "duration_ms": 209.627,
+    "client_ip": "172.19.0.1"
+  }
+}
+2025-03-06 13:19:52,885 - INFO - {
+  "timestamp": "2025-03-06T13:19:52.885336",
+  "type": "system",
+  "message": "Incoming GET request to /api/user/me"
+}
+2025-03-06 13:19:52,898 - INFO - {
+  "timestamp": "2025-03-06T13:19:52.898055",
+  "event_type": "user_info_accessed",
+  "user_id": "eb23cf58-dbc4-4431-a624-2e5dab5ef950",
+  "status": "success",
+  "details": {
+    "accessed_user_id": "eb23cf58-dbc4-4431-a624-2e5dab5ef950"
+  }
+}
+2025-03-06 13:19:52,899 - INFO - {
+  "timestamp": "2025-03-06T13:19:52.899335",
+  "type": "system",
+  "message": "Completed GET /api/user/me - Status: 200 - Duration: 14.03ms"
+}
+2025-03-06 13:19:52,900 - INFO - {
+  "timestamp": "2025-03-06T13:19:52.900037",
+  "event_type": "api_request",
+  "user_id": "anonymous",
+  "status": "success",
+  "details": {
+    "method": "GET",
+    "path": "/api/user/me",
+    "status_code": 200,
+    "duration_ms": 14.032,
+    "client_ip": "172.19.0.1"
+  }
+}
+2025-03-06 18:51:51,118 - INFO - {
+  "timestamp": "2025-03-06T18:51:51.118537",
+  "type": "system",
+  "message": "Incoming GET request to /api/user/me"
+}
+2025-03-06 18:51:51,119 - INFO - {
+  "timestamp": "2025-03-06T18:51:51.118537",
+  "event_type": "token_validation_error",
+  "details": {
+    "error": "Signature verification failed"
+  }
+}
+2025-03-06 18:51:51,119 - ERROR - {
+  "timestamp": "2025-03-06T18:51:51.119538",
+  "error_type": "auth_error",
+  "error_message": "Invalid token",
+  "details": {
+    "token": "redacted"
+  }
+}
+2025-03-06 18:51:51,119 - ERROR - {
+  "timestamp": "2025-03-06T18:51:51.119538",
+  "error_type": "auth_error",
+  "error_message": "",
+  "details": {}
+}
+2025-03-06 18:51:51,119 - INFO - {
+  "timestamp": "2025-03-06T18:51:51.119538",
+  "type": "system",
+  "message": "Completed GET /api/user/me - Status: 401 - Duration: 2.00ms"
+}
+2025-03-06 18:51:51,120 - INFO - {
+  "timestamp": "2025-03-06T18:51:51.120538",
+  "event_type": "api_request",
+  "user_id": "anonymous",
+  "status": "success",
+  "details": {
+    "method": "GET",
+    "path": "/api/user/me",
+    "status_code": 401,
+    "duration_ms": 2.0010000000000003,
+    "client_ip": "127.0.0.1"
+  }
+}
+2025-03-06 18:52:03,966 - INFO - {
+  "timestamp": "2025-03-06T18:52:03.966493",
+  "type": "system",
+  "message": "Incoming PUT request to /api/login"
+}
+2025-03-06 18:52:04,181 - INFO - {
+  "timestamp": "2025-03-06T18:52:04.181933",
+  "event_type": "security_violation",
+  "details": {
+    "error": "Invalid table name",
+    "table": null
+  }
+}
+2025-03-06 18:52:04,181 - INFO - {
+  "timestamp": "2025-03-06T18:52:04.181933",
+  "event_type": "authentication",
+  "user_id": "bc912b5a-e985-4854-8609-99bb9dd09b97",
+  "status": "success",
+  "details": {
+    "ip_address": "127.0.0.1",
+    "success": true
+  }
+}
+2025-03-06 18:52:04,182 - INFO - {
+  "timestamp": "2025-03-06T18:52:04.182952",
+  "type": "system",
+  "message": "Completed PUT /api/login - Status: 200 - Duration: 216.46ms"
+}
+2025-03-06 18:52:04,182 - INFO - {
+  "timestamp": "2025-03-06T18:52:04.182952",
+  "event_type": "api_request",
+  "user_id": "anonymous",
+  "status": "success",
+  "details": {
+    "method": "PUT",
+    "path": "/api/login",
+    "status_code": 200,
+    "duration_ms": 216.459,
+    "client_ip": "127.0.0.1"
+  }
+}
+2025-03-06 18:52:06,225 - INFO - {
+  "timestamp": "2025-03-06T18:52:06.225350",
+  "type": "system",
+  "message": "Incoming GET request to /api/user/me"
+}
+2025-03-06 18:52:06,226 - INFO - {
+  "timestamp": "2025-03-06T18:52:06.226349",
+  "event_type": "user_info_accessed",
+  "user_id": "bc912b5a-e985-4854-8609-99bb9dd09b97",
+  "status": "success",
+  "details": {
+    "accessed_user_id": "bc912b5a-e985-4854-8609-99bb9dd09b97"
+  }
+}
+2025-03-06 18:52:06,227 - INFO - {
+  "timestamp": "2025-03-06T18:52:06.227348",
+  "type": "system",
+  "message": "Completed GET /api/user/me - Status: 200 - Duration: 2.00ms"
+}
+2025-03-06 18:52:06,227 - INFO - {
+  "timestamp": "2025-03-06T18:52:06.227348",
+  "event_type": "api_request",
+  "user_id": "anonymous",
+  "status": "success",
+  "details": {
+    "method": "GET",
+    "path": "/api/user/me",
+    "status_code": 200,
+    "duration_ms": 1.9980000000000002,
+    "client_ip": "127.0.0.1"
+  }
+}
